@@ -7,7 +7,8 @@
 17:50 memory 추가  
 
 # 2022-06-15
-12:50 Array, two dimensional array 추가 [36장](https://dojang.io/mod/page/view.php?id=292)[37장](https://dojang.io/mod/page/view.php?id=306)
+12:50 Array, two dimensional array 추가  
+[36장](https://dojang.io/mod/page/view.php?id=292)[37장](https://dojang.io/mod/page/view.php?id=306)  
 17:00 point array 추가
 
 # Most used languge 
