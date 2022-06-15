@@ -3,6 +3,114 @@
 
 int main()
 {
+    char s1[10];
+    char s2[10];
+
+    printf("문자열을 두 개 입력하세요 ");
+    scanf("%s %s",s1,s2);
+
+    printf("%s\n", s1);
+    printf("%s\n", s2);
+
+    return 0;
+}
+
+/*
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    int n;
+    
+    scanf("%d",&n);
+
+    int **matrix = malloc(sizeof(int *)* n);
+
+    for(int i = 0; i < n; i++)
+    {
+        matrix[i]= malloc(sizeof(int)* n);
+        memset(matrix[i], 0,sizeof(int) * n);
+    } 
+
+    for(int i = 0; i < n; i++)
+    {
+        matrix [i][i]= 1;
+        
+        for(int j = 0; j < n; j++)
+        {
+            printf("%d ",matrix[i][j]);
+        }
+        printf("\n");
+
+    }
+
+    for(int i = 0; i < n; i++)
+    {
+        free(matrix[i]);
+    }
+
+    free(matrix);
+
+    return 0;
+}
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int num;
+    int num1 = 0;
+
+    scanf("%d",&num);
+
+    int **m = malloc(sizeof(int *) * num);
+
+    for (int i = 0; i < num; i++)
+    {
+        m[i] = malloc(sizeof(int)* num);
+    }
+
+    for (int i = 0; i < num; i++)
+    {
+        m[i][num1] = 1;
+
+        for (int j = 0; j < num; j++)
+        {
+            if (m[i][j] == 1)
+            {
+                printf("1");
+                continue;
+            }
+            else
+            {
+                m[i][j] = 0;
+                printf("%d",m[i][j]);
+            }
+        }
+        printf("\n");
+        num1++;
+    }
+
+    for (int i = 0; i < num; i++)
+    {
+        free(m[i]);
+    }
+
+    free(m);
+
+    return 0;
+}
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main()
+{
     int matrix[5][5];
 
     scanf("%d %d %d %d %d", 
@@ -34,6 +142,14 @@ int main()
     }
 
     return 0;
+}
+
+int num = 0;
+
+for(int i = 0; i < col; i++)
+{
+    printf("%d",matrix[i][num]);
+    num++;
 }
 
 /*#include <stdio.h>
