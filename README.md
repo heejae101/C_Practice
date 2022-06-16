@@ -7,10 +7,10 @@
 17:50 memory 추가  
 
 # 2022-06-15
-[36장 바로가기](https://dojang.io/mod/page/view.php?id=292 [37장 바로가기](https://dojang.io/mod/page/view.php?id=306)
 12:50 Array, two dimensional array 추가    
 17:00 point, array 추가
 18:00 string, input 추가  
+
 # 2022-06-16
 12:32 파일 이름 구조 변경, string (len,cmp,cpy,cat,sprintf,chr,str,rchr)추가  
 # Most used languge 
