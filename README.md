@@ -10,6 +10,7 @@
 12:50 Array, two dimensional array 추가    
 17:00 point, array 추가  
 18:00 string, input 추가  
+
 # 2022-06-16
 12:32 파일 이름 구조 변경, string (len,cmp,cpy,cat,sprintf,chr,str,rchr)추가  
 18:28 수정해야함.  
