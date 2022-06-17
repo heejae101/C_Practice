@@ -3,15 +3,17 @@
 
 # 2022-06-14
 12:40 break, continue, for, while, do while 추가  
-15:58 goto,nested_loop,FizzBuzz,pointer 추가 및 수정  
+15:58 goto,nested_loop,FizzBuzz,pointer 추가 및 수정    
 17:50 memory 추가  
 
 # 2022-06-15
-[36장 바로가기](https://dojang.io/mod/page/view.php?id=292 [37장 바로가기](https://dojang.io/mod/page/view.php?id=306)
 12:50 Array, two dimensional array 추가    
-17:00 point, array 추가
+17:00 point, array 추가  
 18:00 string, input 추가  
 # 2022-06-16
 12:32 파일 이름 구조 변경, string (len,cmp,cpy,cat,sprintf,chr,str,rchr)추가  
+18:28 수정해야함.  
+# 2022-06-17
+12:24 strtok.c,atoi,N-gram 추가 data structure는 추가해야함.  
 # Most used languge 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=heejae101)](https://github.com/heejae101/github-readme-stats)
