@@ -102,7 +102,7 @@ int main()
 /* 구조체 변수를 선언할 때 일일이 struct 키워드를 붙이려니 귀찮다. 키워드를 생략하는 방법은 typedef로 구조체를 정의하면서
 별칭(alias)을 지정해주면됩니다.
 */
-typedef struct 48_data_structure_prc
+typedef struct 
 {
     /* data */
 };
@@ -121,8 +121,9 @@ typedef struct _Person
 
 int main()
 {
-    Person p1;
+    Person p1; // 구조체 별칭 person으로 변수 선언
 
+    // 점으로 구조체 맴버에 접근하여 값 할당
     strcpy(p1.name,"홍길동");
     p1.age =30;
     strcpy(p1.address, "서울시 용산구 한남동");
@@ -141,6 +142,75 @@ typedef struct _Person {    // 구조체 이름은 _Person
     char address[100];         // 구조체 멤버 3
 } Person;                   // typedef를 사용하여 구조체 별칭을 Person으로 정의
 */
+
+//만약 구조체 별칭을 사용하지 않고 구조체 이름을 변수를 선언하고 싶다면 struct _person p1;
+
+/* typedef 는 자료형의 별칭을 만드는 기능 따라서 구조체 뿐만 아니라 모든 자료형의 별칭을 만들수 있음
+typedef int myint;
+typedef* int PMYINT;
+
+MYINT num1l;
+PMYIMT numPtr1;
+numPtr1 = &num1;
+
+PMYINT안에 *가 이미 포함되 있어서 이중 포인터가 선언 
+PMYINT* numPtr1;
+int* *numPtr2;
+*/
+/* 구조체 태그 
+strut 뒤에 붙는 구조체 이름은 원래 구조체 태그라 부릅니다. 나중에 배울 공용체 열거형도 마찬가지로 공용체 태그 열거형 태그라 부릅니다.
+
+struct 태그 {
+    자료형 멤버이름;
+};
+
+typedef struct 태그 {
+    자료형 멤버이름;
+}타입이름;
+
+typedef struct Person { //구조체 이름도 Person
+    char name[20];
+    int age;
+    char address[100];
+} Person; //typedef로 정의한 타입 이름도 Person
+*/
+
+// 익명 구조체 를 사용하면 구조체 이름을 지정하지 않아도 됩니다.
+typedef struct 
+{
+    /* data */
+};
+
+// 다음 코드
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <string.h>
+
+typedef struct 
+{
+    char name[20];
+    int age;
+    char address[100];
+}Person;
+
+int main()
+{
+    Person p1;
+
+    strcpy(p1.name,"홍길동");
+    p1.age = 30;
+    strcpy(p1.address,"서울시");
+
+    printf("이름: %s\n", p1.name);
+    printf("나이: %s\n", p1.age);
+    printf("주소: %s\n", p1.address);
+
+    return 0;
+}
+
+
+
 
 
 
